@@ -42,7 +42,9 @@ jobs:
       run: |
         echo $ENCODED_KEYSTORE | base64 -di > keystore.jks
 
-
+- name: Clean and Build
+  run: ./gradlew clean build
+  
     - name: Build Unsiged APK
       run: |
         cd ${{ github.workspace }}/V2rayNG
