@@ -1,5 +1,5 @@
-# MoofyNG
-MoofyNG is a customized v2rayNG built upon [Mahsa-Core](https://github.com/GFW-knocker/Xray-core) (xray-core optimized for Iran) and forked from the NikaNG project.
+# Moofy
+Moofy is a customized v2rayNG built upon [Mahsa-Core](https://github.com/GFW-knocker/Xray-core) (xray-core optimized for Iran) and forked from the NikaNG project.
 
 ### Features
 - Focused on Iran firewall compared to v2rayNG
