@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.TAEL.MoofyNG"
+        applicationId = "com.TAEL.Moofy"
         minSdk = 21
         targetSdk = 34
         versionCode = 579
@@ -67,7 +67,7 @@ android {
                 else
                     "universal"
 
-                output.outputFileName = "MoofyNG_${variant.versionName}_${abi}.apk"
+                output.outputFileName = "Moofy_${variant.versionName}_${abi}.apk"
                 if(versionCodes.containsKey(abi))
                 {
                     output.versionCodeOverride = (1000000 * versionCodes[abi]!!).plus(variant.versionCode)
