@@ -11,8 +11,8 @@ android {
         applicationId = "com.TAEL.Moofy"
         minSdk = 21
         targetSdk = 34
-        versionCode = 579
-        versionName = "1.8.35"
+        versionCode = 583
+        versionName = "1.8.38"
         multiDexEnabled = true
         splits {
             abi {
@@ -68,12 +68,9 @@ android {
                     "universal"
 
                 output.outputFileName = "Moofy_${variant.versionName}_${abi}.apk"
-                if(versionCodes.containsKey(abi))
-                {
+                if (versionCodes.containsKey(abi)) {
                     output.versionCodeOverride = (1000000 * versionCodes[abi]!!).plus(variant.versionCode)
-                }
-                else
-                {
+                } else {
                     return@forEach
                 }
             }
@@ -92,7 +89,7 @@ android {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar","*.jar"))))
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar", "*.jar"))))
     testImplementation(libs.junit)
 
     implementation(libs.flexbox)
@@ -130,7 +127,6 @@ dependencies {
     implementation(libs.language.json)
     implementation(libs.quickie.bundled)
     implementation(libs.core)
-    // Updating these 2 dependencies may cause some errors. Be careful.
     implementation(libs.work.runtime.ktx)
     implementation(libs.work.multiprocess)
 }
